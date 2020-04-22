@@ -43,7 +43,7 @@ function Main(props) {
             <CardView restaurant={restaurant}/>
             </Grid>)
         }
-        { showMoreIcon && <Grid item xs={12} lg={4} style={{padding : 10}} onClick={()=>setCount(count +1)}>
+        { showMoreIcon && <Grid item xs={12} lg={4} style={{padding : 10,cursor : 'pointer'}} onClick={()=>setCount(count +1)}>
         <Card style={{height : 350,display : 'flex' ,justifyContent : 'center',alignItems : 'center',backgroundColor : '#eeeeee'}}>
             <Typography gutterBottom variant="h2" component="body3">
                {`+${parseInt(restaurantList.length) - parseInt(count*5) } More`}
