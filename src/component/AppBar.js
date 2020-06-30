@@ -5,6 +5,8 @@ import {Typography,Grid,Card} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import {connect} from 'react-redux' 
 import {get,startCase} from 'lodash'
+import ButtonAppBar from './Header'
+import {HeaderBar} from './StyledHeader'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -27,6 +29,8 @@ function Main(props) {
   const showMoreIcon = restaurantList.length > count*5
   return (
     <div className={classes.root}>
+      <HeaderBar />
+      <ButtonAppBar />
       <Grid container>
       <Grid item lg={3}>
        <Drawer />
