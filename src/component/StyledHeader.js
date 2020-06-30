@@ -43,4 +43,3 @@ export {
     HeaderBar
 }
 
-git config --global user.email "serawatpremchand143@gmail.com"
